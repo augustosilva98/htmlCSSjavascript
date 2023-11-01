@@ -1,16 +1,15 @@
 Criei a estrutura básica do HTML:
-
 Iniciei com a declaração do tipo de documento e a tag <html>.
 Adicionei a tag <head> com o título da página e a tag <style> para estilos CSS.
 Incluí a tag <body> para o conteúdo da página.
-Adicionei os elementos HTML:
 
+Adicionei os elementos HTML:
 Incluí um título <h1> para o cabeçalho da página.
 Criei um formulário <form> com um ID para identificação.
 Adicionei campos de entrada <input> para o nome do aluno, turma e nota.
 Incluí um botão de envio <button> para enviar o formulário.
-Implementei a lógica JavaScript:
 
+Implementei a lógica JavaScript:
 Adicionei um ouvinte de evento ao formulário para capturar o evento de envio.
 Utilizei o método preventDefault() para evitar o envio padrão do formulário.
 Recuperei os valores dos campos do formulário usando seus IDs.
