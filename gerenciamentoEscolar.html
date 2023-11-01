@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gerenciamento Escolar</title>
+  <style>
+    /* Estilos CSS */
+  </style>
+</head>
+<body>
+  <h1>Gerenciamento Escolar</h1>
+  <form id="form-aluno">
+    <label for="nome">Nome do Aluno:</label>
+    <input type="text" id="nome" required><br>
+
+    <label for="turma">Turma:</label>
+    <input type="text" id="turma" required><br>
+
+    <label for="nota">Nota:</label>
+    <input type="number" id="nota" required><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+    document.getElementById("form-aluno").addEventListener("submit", function(event) {
+      event.preventDefault(); // Impede o envio do formulário
+
+      // Recupera os valores dos campos do formulário
+      var nome = document.getElementById("nome").value;
+      var turma = document.getElementById("turma").value;
+      var nota = parseFloat(document.getElementById("nota").value);
+
+      // Verifica se o aluno foi aprovado, em recuperação ou reprovado
+      var status;
+      if (nota > 6) {
+        status = "Aprovado";
+      } else if (nota >= 4 && nota <= 6) {
+        status = "Recuperação";
+      } else {
+        status = "Reprovado";
+      }
+
+      // Exibe a mensagem de status
+      alert("Nome: " + nome + "\nTurma: " + turma + "\nStatus: " + status);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Concessionária</title>
+  <style>
+    .carro {
+      border: 1px solid black;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="carro">
+    <h2>Carro Novo</h2>
+    <p><strong>Potência:</strong> <span id="potenciaNovo"></span></p>
+    <p><strong>Cor:</strong> <span id="corNovo"></span></p>
+    <p><strong>Valor:</strong> R$ <span id="valorNovo"></span></p>
+  </div>
+
+  <div class="carro">
+    <h2>Carro Usado</h2>
+    <p><strong>Ano:</strong> <span id="anoUsado"></span></p>
+    <p><strong>Potência:</strong> <span id="potenciaUsado"></span></p>
+    <p><strong>Cor:</strong> <span id="corUsado"></span></p>
+    <p><strong>Valor:</strong> R$ <span id="valorUsado"></span></p>
+  </div>
+
+  <script>
+    // Informações do Carro Novo
+    var potenciaNovo = "200 cv";
+    var corNovo = "Preto";
+    var valorNovo = 100000;
+
+    // Informações do Carro Usado
+    var anoUsado = 2018;
+    var potenciaUsado = "150 cv";
+    var corUsado = "Branco";
+    var valorUsado = 60000;
+
+    // Atualiza as informações na página
+    document.getElementById("potenciaNovo").textContent = potenciaNovo;
+    document.getElementById("corNovo").textContent = corNovo;
+    document.getElementById("valorNovo").textContent = valorNovo.toLocaleString();
+
+    document.getElementById("anoUsado").textContent = anoUsado;
+    document.getElementById("potenciaUsado").textContent = potenciaUsado;
+    document.getElementById("corUsado").textContent = corUsado;
+    document.getElementById("valorUsado").textContent = valorUsado.toLocaleString();
+  </script>
+</body>
+</html>
