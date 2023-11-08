@@ -1,14 +1,13 @@
 Estrutura HTML:
-
 Começamos criando um arquivo HTML básico com a estrutura necessária.
 Adicionamos duas divs com a classe "carro" para representar as informações de um carro novo e um carro usado.
 Dentro de cada div, adicionamos elementos HTML para exibir as informações do carro, como potência, cor e valor.
-Estilização CSS:
 
+Estilização CSS:
 Utilizamos CSS para estilizar as divs com a classe "carro".
 Definimos uma borda, espaçamento interno e margem inferior para cada div.
-Lógica JavaScript:
 
+Lógica JavaScript:
 Criamos variáveis para armazenar as informações do carro novo e do carro usado.
 Atribuímos valores a essas variáveis, representando as informações do carro.
 Utilizamos o método toLocaleString() para formatar o valor do carro com separadores de milhar.
